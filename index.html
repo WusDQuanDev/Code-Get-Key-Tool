@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Bùi Đình Quân">
+    <meta name="keywords" content="Bui Dinh Quan, DQuan, DQuanDev, Bui Van Quan, WusDinhQuan, WusVanQuan, VanQuan, DinhQuan, VQuan">
+    <meta name="description" content="netbreakers, NetBreakers, NetBreakersTeam, NetBreakersGroup, NetBreakersCommunity">
+    <title>Chào Buổi Sáng - Copy Key</title>
+
+    <!-- Link đến Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Liên kết đến CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Phần logo -->
+        <header class="header">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1 class="title">Bùi Đình Quân</h1>
+        </header>
+
+        <!-- Phần ngày tháng -->
+        <section class="date-section">
+            <p id="current-date"></p>
+        </section>
+
+        <!-- Lời chúc -->
+        <section class="greeting-section">
+            <p class="greeting">Chúc Buổi Sáng Tốt Lành!</p>
+        </section>
+
+        <!-- Phần key và nút copy -->
+        <section class="key-section">
+            <p id="key-result"></p>
+            <button id="copy-key-btn" style="display: none;" onclick="copyKey()">Copy Key</button>
+        </section>
+
+        <!-- Nút lấy key -->
+        <section class="button-section">
+            <button id="get-key-btn" onclick="getKey()">Lấy Key</button>
+            <div id="loading" style="display:none;">Đang lấy key...</div>
+        </section>
+    </div>
+       
+       <footer class="footer">
+         <span>© NetBreakers Community</span>
+       </footer>
+
+    <!-- JavaScript để xử lý ngày tháng và copy key xử lý api  -->
+    <script src="script.js"></script>
+</body>
+</html>
